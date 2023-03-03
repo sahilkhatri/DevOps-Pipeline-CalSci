@@ -28,7 +28,6 @@ pipeline {
 		{
 			 dockerImage.push()
 		}
-	    }
 	}
 
 	stage('Clean Docker Images') {
