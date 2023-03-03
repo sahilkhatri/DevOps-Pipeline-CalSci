@@ -2,7 +2,7 @@
 
 def add(a, b):
     return a+b;
-add(10,40)
+add(10,10)
 """
 a = int(input())
 b = int(input())
