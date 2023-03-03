@@ -22,18 +22,23 @@ pipeline {
 	stage('Build Docker Images') {
 	    steps{
 		echo 'This is Build Docker Images stage'
-		sh "docker build -t devopsimg ."
+		dockerImage = docker.build("ascay/devopsimg")
 	    }
 	}
 
 	stage('Publish Docker Images') {
-	    steps{
+	    steps{	
+		withDockerRegistry([credentialsId: "dockerhub_ascay", url: ""])
+		{
+			 dockerImage.push()
+		}
 		echo 'This is Publish Docker Image stage'
 	    }
 	}
 
 	stage('Clean Docker Images') {
 	    steps{
+		sh "docker rmi ascay/devopsimg"
 		echo 'This is Clean Docker Images stage'
 	    }
 	}
