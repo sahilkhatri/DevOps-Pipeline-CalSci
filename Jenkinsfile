@@ -3,8 +3,7 @@ pipeline {
     stages {	
 	stage('Git Pull') {
 	    steps{
-		git branch: 'main',
-		git 'https://github.com/sahilkhatri/DevOps-Pipeline-CalSci.git'
+		git url: 'https://github.com/sahilkhatri/DevOps-Pipeline-CalSci.git', branch: 'main'
 		echo 'This is Git Pull stage'
 	    }
 	}
