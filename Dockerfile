@@ -1,6 +1,7 @@
-FROM ubuntu:latest
+FROM openjdk
 
-WORKDIR /
+WORKDIR ./
 
 COPY target/DevOpsPipelineCalSci-1.0-SNAPSHOT.jar .
 
+CMD ["java", "-jar", "DevOpsPipelineCalSci-1.0-SNAPSHOT.jar"]
