@@ -22,7 +22,7 @@ pipeline {
 	stage('Build Docker Images') {
 	    steps{
 		echo 'This is Build Docker Images stage'
-		sh "sudo docker build -t devopsimg ."
+		sh "docker build -t devopsimg ."
 	    }
 	}
 
