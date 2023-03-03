@@ -1,14 +1,9 @@
 pipeline {
     agent any
-    stages {
-        stage('Declarative Checkout SCM') {
-	    steps{
-		echo 'This is declarative checkout scm stage'
-	    }
-	}
-	
+    stages {	
 	stage('Git Pull') {
 	    steps{
+		git branch: 'main',
 		git 'https://github.com/sahilkhatri/DevOps-Pipeline-CalSci.git'
 		echo 'This is Git Pull stage'
 	    }
