@@ -10,7 +10,7 @@ pipeline {
 
 	stage('Maven Build') {
 	    steps{
-		mvn clean package
+		sh "mvn clean package"
                 sh "chmod u+x calculator.py"
                 sh "./calculator.py"
 		sh "chmod u+x test.py"
