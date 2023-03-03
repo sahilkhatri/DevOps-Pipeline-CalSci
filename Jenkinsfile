@@ -9,6 +9,7 @@ pipeline {
 	
 	stage('Git Pull') {
 	    steps{
+		git 'https://github.com/sahilkhatri/DevOps-Pipeline-CalSci.git'
 		echo 'This is Git Pull stage'
 	    }
 	}
