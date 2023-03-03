@@ -10,6 +10,10 @@ pipeline {
 
 	stage('Maven Build') {
 	    steps{
+                sh "chmod u+x calculator.py"
+                sh "./calculator.py"
+		sh "chmod u+x test.py"
+		sh "./test.py"
 		echo 'This is Maven Build stage'
 	    }
 	}
