@@ -20,14 +20,19 @@ pipeline {
 	}
 
 	stage('Build Docker Images') {
-		dockerImage = docker.build("ascay/devopsimg")
+	    steps{
+		sh "docker build -t ascay/devopsimg ."
+	    }
 	}
 
 	stage('Publish Docker Images') {
-		withDockerRegistry([credentialsId: "dockerhub_ascay", url: ""])
+	    steps{
+		withCredentials([usernamePassword(credentialsId: "dockerhub_ascay", passwordVariable: 'dockerHubPassword', usernameVariable: 'dockerHubUser')])
 		{
-			 dockerImage.push()
+			sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPassword}"
+			sh "docker push ascay/devopsimg"
 		}
+	    }
 	}
 
 	stage('Clean Docker Images') {
