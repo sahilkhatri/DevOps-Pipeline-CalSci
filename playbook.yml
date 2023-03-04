@@ -1,0 +1,17 @@
+---
+- name: Docker deployment
+  hosts: client1
+  gather_facts: yes
+  become: yes
+  tasks:
+    - name: pull docker images
+      shell: docker pull ascay/devopsimg
+
+    - name: run container
+      shell: docker run -it -d ascay/devopsimg
+    
+    - name: start terminal
+      shell:
+      args:
+        cmd: DISPLAY=:0 nohup gnome-terminal -e "bash -c 'whoami'" </dev/null >/dev/null 2>&1 &
+        executable: /bin/bash
