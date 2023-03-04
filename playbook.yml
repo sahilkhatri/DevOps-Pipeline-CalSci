@@ -8,7 +8,7 @@
       shell: docker pull ascay/devopsimg
 
     - name: run container
-      shell: docker run -it -d ascay/devopsimg
+      shell: docker run -it -d --name devopspipelinecalsci ascay/devopsimg
     
     - name: start terminal
       shell:

@@ -45,7 +45,7 @@ pipeline {
 
 	stage('Deploy and run images') {
 	    steps{
-		sh "ansible-playbook -i inventory playbook.yml"
+		ansiblePlaybook(credentialsId: 'ansible_private_key', inventory: 'inventory', playbook: 'playbook.yml')
 		echo 'This is Deploy and run images stage'
 	    }
 	}
