@@ -9,6 +9,3 @@
 
     - name: run container
       shell: docker run -it -d --name devopspipelinecalsci ascay/devopsimg
-    
-    - name: start terminal
-      shell: sudo gnome-terminal
