@@ -60,14 +60,14 @@ public class Calculator {
                     System.out.println("\n");
 
                     break;
-//                case 2:
-//                    // find cube root
-//                    System.out.print("Enter a number : ");
-//                    number1 = scanner.nextDouble();
-//                    System.out.println("Cube root of "+number1+" is : " + calculator.cuberoot(number1));
-//                    System.out.println("\n");
-//
-//                    break;
+                case 2:
+                    // find cube root
+                    System.out.print("Enter a number : ");
+                    number1 = scanner.nextDouble();
+                    System.out.println("Cube root of "+number1+" is : " + calculator.cuberoot(number1));
+                    System.out.println("\n");
+
+                    break;
 //                case 3:
 //                    // find square
 //                    System.out.print("Enter a number : ");
