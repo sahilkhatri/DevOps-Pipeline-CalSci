@@ -22,6 +22,7 @@ pipeline {
 	stage('Build Docker Images') {
 	    steps{
 		sh "docker build -t ascay/devopsimg ."
+		echo 'This is Docker build images'
 	    }
 	}
 
