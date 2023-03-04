@@ -4,5 +4,5 @@ WORKDIR ./
 
 COPY target/DevOpsPipelineCalSci-1.0-SNAPSHOT.jar .
 
-#CMD ["java", "-jar", "DevOpsPipelineCalSci-1.0-SNAPSHOT.jar"]
-CMD ["mkdir", "testdir"]
+CMD ["java", "-jar", "DevOpsPipelineCalSci-1.0-SNAPSHOT.jar"]
+#CMD ["mkdir", "testdir"]

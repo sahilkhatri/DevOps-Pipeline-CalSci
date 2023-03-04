@@ -6,7 +6,7 @@ from calculator import add
 
 class TestSum(unittest.TestCase):
     def test_list_int(self):
-        a = 6
+        a = 7
         b = 10
         result = add(5,10)
         self.assertEqual(result, 15)
