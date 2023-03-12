@@ -8,4 +8,4 @@
       shell: docker pull ascay/devopsimg
 
     - name: run container
-      shell: docker run -it -d --name devopspipelinecalsci ascay/devopsimg
+      shell: docker run -it -d --name devopspipelinecalsci ascay/devopsimg && gnome-terminal -- bash -c "docker attach devopspipelinecalsci; exec bash"
