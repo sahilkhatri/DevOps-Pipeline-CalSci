@@ -146,6 +146,14 @@ changes in pom.xml, log4j2.xml, etc
 use filename-jar-with-dependencies.jar 
 
 
+inside ansible use this for auto opening of terminal and running the code:
+docker run -it -d --name devopspipelinecalsci ascay/devopsimg && gnome-terminal -- bash -c "docker attach devopspipelinecalsci; exec bash"
+
+https://askubuntu.com/questions/1404492/accessibility-bus-error-permission-denied-warning-when-opening-pdf-documents
+this is giving permission issues:
+
+export NO_AT_BRIDGE=1
+
 
 
 
