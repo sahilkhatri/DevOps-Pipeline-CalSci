@@ -45,6 +45,7 @@ pipeline {
 
 	stage('Deploy and run images') {
 	    steps{
+		sh "docker rm devopspipelinecalsci"
 		ansiblePlaybook(credentialsId: 'ansible_private_key', inventory: 'inventory', playbook: 'playbook.yml')
 		echo 'This is Deploy and run image stage'
 	    }
