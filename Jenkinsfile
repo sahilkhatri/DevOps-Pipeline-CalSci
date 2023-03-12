@@ -55,7 +55,7 @@ pipeline {
 	    steps{
 //		sh "chmod +x openterminal.sh"
 //		sh "./openterminal.sh"
-		echo 'This is Declarative Post Actions stage....'
+		echo 'This is Declarative Post Actions stage'
 	    }
 	}
     }
