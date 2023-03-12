@@ -40,7 +40,7 @@ public class Calculator {
         double number1, number2;
         do {
             System.out.println("Calculator-using-DevOps, Choose to perform operation");
-            System.out.print("Press 1 to find Multiplication\nPress 2 to find Cube Root\nPress 3 to find Square\nPress 4 to find Subtraction\n" +
+            System.out.print("Press 1 to find Square Root\nPress 2 to find Factorial\nPress 3 to find Natural Log\nPress 4 to find Power\n" +
                     "Press 5 to exit\nEnter your choice: ");
             int choice;
             try {
@@ -63,6 +63,24 @@ public class Calculator {
                     System.out.print("Enter the first number : ");
                     number1 = scanner.nextDouble();
                     System.out.println("Factorial of "+number1+" is : " + calculator.factorial(number1));
+                    System.out.println("\n");
+                    break;
+
+                case 3:
+                    // do Natural Log
+                    System.out.print("Enter the first number : ");
+                    number1 = scanner.nextDouble();
+                    System.out.println("Natural Log of "+number1+" is : " + calculator.naturallog(number1));
+                    System.out.println("\n");
+                    break;
+
+                case 4:
+                    // do Power
+                    System.out.print("Enter the first number : ");
+                    number1 = scanner.nextDouble();
+                    System.out.print("Enter the second number : ");
+                    number2 = scanner.nextDouble();
+                    System.out.println(number1+" raised to the power "+number2+" is : " + calculator.power(number1,number2));
                     System.out.println("\n");
                     break;
 
@@ -138,29 +156,29 @@ public class Calculator {
     }
 
     public double sqrt(double number1) {
-        logger.info("[SQUARE ROOT - " + number1);
+        logger.info("[SQUARE ROOT] - " + number1);
         double sqr = Math.sqrt(number1);
         double result = sqr;
-        logger.info("[RESULT - SQUARE ROOT - " + result);
+        logger.info("[RESULT - SQUARE ROOT] - " + result);
         return result;
     }
 
     public double factorial(double number1){
-        logger.info("[FACTORIAL - " + number1);
+        logger.info("[FACTORIAL] - " + number1);
         double result = (number1==1 || number1==0) ? 1:number1*factorial(number1-1);
-        logger.info("RESULT - FACTORIAL - " + result);
+        logger.info("[RESULT - FACTORIAL] - " + result);
         return result;
     }
 
     public double naturallog(double number1){
-        logger.info("[NATURAL LOGARITHM - " + number1);
+        logger.info("[NATURAL LOGARITHM] - " + number1);
         double result = Math.log(number1);
         logger.info("[RESULT - NATURAL LOGARITHM - " + result);
         return result;
     }
 
     public double power(double number1, double number2){
-        logger.info("[POWER FUNCTION - " + number1 + "RAISED TO THE POWER" + number2);
+        logger.info("[POWER FUNCTION] - " + number1 + "RAISED TO THE POWER" + number2);
         double result = Math.pow(number1, number2);
         logger.info("[RESULT - POWER FUNCTION - " + result);
         return result;
