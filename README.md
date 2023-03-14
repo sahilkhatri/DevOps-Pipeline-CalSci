@@ -150,6 +150,7 @@ inside ansible use this for auto opening of terminal and running the code:
 docker run -it -d --name devopspipelinecalsci ascay/devopsimg && gnome-terminal -- bash -c "docker attach devopspipelinecalsci; exec bash"
 
 sudo gpasswd -a ansible_usr docker
+sudoxhost + local:
 
 https://askubuntu.com/questions/1404492/accessibility-bus-error-permission-denied-warning-when-opening-pdf-documents
 this is giving permission issues:

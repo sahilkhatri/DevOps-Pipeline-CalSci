@@ -127,33 +127,33 @@ public class Calculator {
     }
 
 
-    public double multiplication(double number1, double number2) {
-        logger.info("[MULTIPLICATION - " + number1 + " AND " + number2);
-        double result = number1 * number2;
-        logger.info("[RESULT - MULTIPLICATION] - " + result);
-        return result;
-    }
-
-    public double cuberoot(double number1) {
-        logger.info("[CUBE ROOT] - " + number1);
-        double result = Math.cbrt(number1);
-        logger.info("[RESULT - CUBE ROOT] - " + result);
-        return result;
-    }
-
-    public double square(double number1) {
-        logger.info("[SQUARE] - " + number1);
-        double result = number1 * number1;
-        logger.info("[RESULT - SQUARE] - " + result);
-        return result;
-    }
-
-    public double sub(double number1, double number2) {
-        logger.info("[SUBTRACTION - " + number2 + " FROM " + number1);
-        double result = number1 - number2;
-        logger.info("[RESULT - SUBTRACTION] - " + result);
-        return result;
-    }
+//    public double multiplication(double number1, double number2) {
+//        logger.info("[MULTIPLICATION - " + number1 + " AND " + number2);
+//        double result = number1 * number2;
+//        logger.info("[RESULT - MULTIPLICATION] - " + result);
+//        return result;
+//    }
+//
+//    public double cuberoot(double number1) {
+//        logger.info("[CUBE ROOT] - " + number1);
+//        double result = Math.cbrt(number1);
+//        logger.info("[RESULT - CUBE ROOT] - " + result);
+//        return result;
+//    }
+//
+//    public double square(double number1) {
+//        logger.info("[SQUARE] - " + number1);
+//        double result = number1 * number1;
+//        logger.info("[RESULT - SQUARE] - " + result);
+//        return result;
+//    }
+//
+//    public double sub(double number1, double number2) {
+//        logger.info("[SUBTRACTION - " + number2 + " FROM " + number1);
+//        double result = number1 - number2;
+//        logger.info("[RESULT - SUBTRACTION] - " + result);
+//        return result;
+//    }
 
     public double sqrt(double number1) {
         logger.info("[SQUARE ROOT] - " + number1);
