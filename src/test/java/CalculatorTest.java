@@ -18,8 +18,8 @@ public class CalculatorTest {
     @Test
     public void sqrtFalsePositive()
     {
-        assertEquals("Finding square root of a number for False Positive", 4, calculator.sqrt(25), DELTA);
-        assertEquals("Finding square root of a number for False Positive", 100, calculator.sqrt(4), DELTA);
+        assertNotEquals("Finding square root of a number for False Positive", 4, calculator.sqrt(25), DELTA);
+        assertNotEquals("Finding square root of a number for False Positive", 100, calculator.sqrt(4), DELTA);
     }
 
     @Test
@@ -33,8 +33,8 @@ public class CalculatorTest {
     @Test
     public void factorialFalsePositive()
     {
-        assertEquals("Finding factorial of a number for False Positive", 120, calculator.factorial(3), DELTA);
-        assertEquals("Finding factorial of a number for False Positive", 100, calculator.factorial(4), DELTA);
+        assertNotEquals("Finding factorial of a number for False Positive", 120, calculator.factorial(3), DELTA);
+        assertNotEquals("Finding factorial of a number for False Positive", 100, calculator.factorial(4), DELTA);
     }
 
 
@@ -49,8 +49,8 @@ public class CalculatorTest {
     @Test
     public void naturallogFalsePositive()
     {
-        assertEquals("Finding natural log of a number for False Positive", 120, calculator.naturallog(1), DELTA);
-        assertEquals("Finding natural log of a number for False Positive", 4, calculator.naturallog(100), DELTA);
+        assertNotEquals("Finding natural log of a number for False Positive", 120, calculator.naturallog(1), DELTA);
+        assertNotEquals("Finding natural log of a number for False Positive", 4, calculator.naturallog(100), DELTA);
     }
 
     @Test
@@ -64,8 +64,8 @@ public class CalculatorTest {
     @Test
     public void powerFalsePositive()
     {
-        assertEquals("Finding power of a number for False Positive", 10, calculator.power(3, 2), DELTA);
-        assertEquals("Finding power of a number for False Positive", 25, calculator.power(4,2), DELTA);
+        assertNotEquals("Finding power of a number for False Positive", 10, calculator.power(3, 2), DELTA);
+        assertNotEquals("Finding power of a number for False Positive", 25, calculator.power(4,2), DELTA);
     }
 
 //    @Test
