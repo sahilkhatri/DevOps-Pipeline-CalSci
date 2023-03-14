@@ -42,7 +42,7 @@ public class CalculatorTest {
     public void naturallogTruePositive()
     {
         assertEquals("Finding natural log of a number for True Positive", 0, calculator.naturallog(1), DELTA);
-        assertEquals("Finding factorial of a number for True Positive", 2.30, calculator.naturallog(10), DELTA);
+        assertEquals("Finding factorial of a number for True Positive", 2.302585092994046, calculator.naturallog(10), DELTA);
 
     }
 
