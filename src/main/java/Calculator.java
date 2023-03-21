@@ -39,7 +39,7 @@ public class Calculator {
         Calculator calculator = new Calculator();
         Scanner scanner = new Scanner(System.in);
         double number1, number2;
-        
+
 	do {
             System.out.println("Calculator-using-DevOps, Choose to perform operation");
             System.out.print("Press 1 to find Square Root\nPress 2 to find Factorial\nPress 3 to find Natural Log\nPress 4 to find Power\n" +

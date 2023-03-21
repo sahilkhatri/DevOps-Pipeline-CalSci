@@ -7,6 +7,10 @@
     - name: pull docker images
       shell: docker pull ascay/devopsimg
 
+    - name: remove container if exists
+      shell: docker rm devopspipelinecalsci
+      when: result.exists
+
     - name: run container
       shell: docker run -it -d --name devopspipelinecalsci ascay/devopsimg
         #      shell: docker run -it -d --name devopspipelinecalsci ascay/devopsimg && gnome-terminal -- bash -c "docker attach devopspipelinecalsci; exec bash"

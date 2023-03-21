@@ -129,7 +129,6 @@ docker attach container-name
 
 
 ansible plugin jenkins
-
 https://plugins.jenkins.io/ansible/
 set env variable in jenkins if utf-8 error occurs
 https://www.linkedin.com/pulse/how-resolve-utf-8-encoding-issue-jenkins-ajuram-salim/
