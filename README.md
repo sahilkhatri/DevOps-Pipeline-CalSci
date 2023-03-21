@@ -127,7 +127,6 @@ sudo docker run -it ascay/devopsimg
 docker attach container-name
 
 
-
 ansible plugin jenkins
 https://plugins.jenkins.io/ansible/
 set env variable in jenkins if utf-8 error occurs
