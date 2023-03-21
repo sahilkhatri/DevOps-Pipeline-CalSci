@@ -1,27 +1,3 @@
-/*import java.util.Scanner;
-
-public class Calculator {
-    public static void main(String[] args)
-    {
-        Calculator obj = new Calculator();
-        System.out.println("Enter a number : ");
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        System.out.println(obj.factorial(n));
-
-    }
-    public int factorial(int n)
-    {
-        int ans=1;
-        for(int i=1; i<=n; i++)
-        {
-            ans = ans * i;
-        }
-        return ans;
-    }
-}
-*/
-
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -86,41 +62,6 @@ public class Calculator {
                     System.out.println("\n");
                     break;
 
-//                case 1:
-//                    // do Multiplication
-//                    System.out.print("Enter the first number : ");
-//                    number1 = scanner.nextDouble();
-//                    System.out.print("Enter the second number : ");
-//                    number2 = scanner.nextDouble();
-//                    System.out.println("Multiplication of "+number1+" and "+number2+" is : " + calculator.multiplication(number1,number2));
-//                    System.out.println("\n");
-//                    break;
-//                case 2:
-//                    // find cube root
-//                    System.out.print("Enter a number : ");
-//                    number1 = scanner.nextDouble();
-//                    System.out.println("Cube root of "+number1+" is : " + calculator.cuberoot(number1));
-//                    System.out.println("\n");
-//
-//                    break;
-//                case 3:
-//                    // find square
-//                    System.out.print("Enter a number : ");
-//                    number1 = scanner.nextDouble();
-//                    System.out.println("Square of "+number1+" is : " + calculator.square(number1));
-//                    System.out.println("\n");
-//
-//                    break;
-//                case 4:
-//                    // do Subtraction
-//                    System.out.print("Enter the first number : ");
-//                    number1 = scanner.nextDouble();
-//                    System.out.print("Enter the second number : ");
-//                    number2 = scanner.nextDouble();
-//                    System.out.println("Subtraction of "+number2+" from "+number1+" is : " + calculator.sub(number1,number2));
-//                    System.out.println("\n");
-//
-//                    break;
                 default:
                     System.out.println("Exiting....");
                     return;
@@ -129,33 +70,6 @@ public class Calculator {
     }
 
 
-//    public double multiplication(double number1, double number2) {
-//        logger.info("[MULTIPLICATION - " + number1 + " AND " + number2);
-//        double result = number1 * number2;
-//        logger.info("[RESULT - MULTIPLICATION] - " + result);
-//        return result;
-//    }
-//
-//    public double cuberoot(double number1) {
-//        logger.info("[CUBE ROOT] - " + number1);
-//        double result = Math.cbrt(number1);
-//        logger.info("[RESULT - CUBE ROOT] - " + result);
-//        return result;
-//    }
-//
-//    public double square(double number1) {
-//        logger.info("[SQUARE] - " + number1);
-//        double result = number1 * number1;
-//        logger.info("[RESULT - SQUARE] - " + result);
-//        return result;
-//    }
-//
-//    public double sub(double number1, double number2) {
-//        logger.info("[SUBTRACTION - " + number2 + " FROM " + number1);
-//        double result = number1 - number2;
-//        logger.info("[RESULT - SUBTRACTION] - " + result);
-//        return result;
-//    }
 
     public double sqrt(double number1) {
         logger.info("[SQUARE ROOT] - " + number1);
