@@ -7,6 +7,11 @@
     - name: pull docker images
       shell: docker pull ascay/devopsimg
 
+    - name: get container info
+      docker_container_info:
+        name: devopspipelinecalsci
+      register: result
+
     - name: remove container if exists
       shell: docker rm devopspipelinecalsci
       when: result.exists
