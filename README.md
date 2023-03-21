@@ -36,7 +36,7 @@ Under Select scopes check the "admin:repo_hook" and generate token
 copy the token generated : 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
 
 In Github DevOpos-Pipeline-CalSci goto settings > webhooks > add webhook
-In Payload URL give the ngrok forwarding url https://bab3-119-161-98-68.in.ngrok.io
+In Payload URL give the ngrok forwarding url https://f712-103-156-19-229.in.ngrok.io
 In Secret give the token generated earlier
 					 
 					 
