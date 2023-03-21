@@ -155,6 +155,7 @@ sudoxhost + local:
 https://askubuntu.com/questions/1404492/accessibility-bus-error-permission-denied-warning-when-opening-pdf-documents
 this is giving permission issues:
 
+
 export NO_AT_BRIDGE=1
 
 
