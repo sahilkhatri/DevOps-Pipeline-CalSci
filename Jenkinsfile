@@ -34,7 +34,8 @@ pipeline {
 
 	stage('Clean Docker Images') {
 	    steps{
-		sh "docker rmi ascay/devopsimg"
+		//sh "docker rmi ascay/devopsimg"
+		sh "docker rmi -f $(docker images -aq)"
 		echo 'This is Clean Docker Images stage'
 	    }
 	}
