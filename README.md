@@ -74,8 +74,6 @@ create a maven project in jenkins
 use github for scm
 give maven home path in the jenkins maven configuration 
 
-
-
 su jenkins
 sudo usermod -a -G docker jenkins
 jenkins restart
