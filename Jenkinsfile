@@ -35,7 +35,11 @@ pipeline {
 	stage('Clean Docker Images') {
 	    steps{
 		//sh "docker rmi ascay/devopsimg"
-		sh "docker rmi -f ${docker images -aq}"
+		sh "docker stop devopspipelinecalsci"
+		sh "docker rm -vf \$(docker ps -aq)"
+
+		sh "docker rmi -f \$(docker images -aq)"
+		
 		echo 'This is Clean Docker Images stage'
 	    }
 	}
