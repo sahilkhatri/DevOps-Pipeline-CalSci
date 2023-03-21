@@ -118,7 +118,6 @@ Jenkinsfile docker build, push, remove image
             }
         }
 
-
 to run the CMD of Dockerfile don't add /bin/bash at the end of run command
 https://stackoverflow.com/questions/35270493/dockerfile-cmd-not-running-at-container-start
 
