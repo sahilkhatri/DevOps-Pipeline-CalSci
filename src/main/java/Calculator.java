@@ -54,12 +54,12 @@ public class Calculator {
 
                 case 4:
                     // do Power
-                    System.out.print("Enter the first number : ");
-                    number1 = scanner.nextDouble();
-                    System.out.print("Enter the second number : ");
-                    number2 = scanner.nextDouble();
-                    System.out.println(number1+" raised to the power "+number2+" is : " + calculator.power(number1,number2));
-                    System.out.println("\n");
+//                    System.out.print("Enter the first number : ");
+//                    number1 = scanner.nextDouble();
+//                    System.out.print("Enter the second number : ");
+//                    number2 = scanner.nextDouble();
+//                    System.out.println(number1+" raised to the power "+number2+" is : " + calculator.power(number1,number2));
+//                    System.out.println("\n");
                     break;
 
                 default:
